@@ -14,4 +14,40 @@ namespace td {
         castle = std::make_unique<Castle>();
     }
 
+    bool Game_Field::next_step() {
+        if(check_game_status())
+            return false;
+        check_castle();
+        check_given_damage();
+    }
+
+    bool Game_Field::check_game_status() const {
+        return game_status;
+    }
+
+    void Game_Field::check_castle() {
+        for( auto &enemy: enemies){
+            if(enemy->get_x() < 30){
+                castle->get_damage(enemy->get_castle_damage());
+                enemy->kill();
+            }
+        }
+    }
+
+    void Game_Field::check_given_damage() {
+        for(auto &line : game_field){
+            for(auto &tile : line.line){
+                if(tile.get_building() == nullptr)
+                    continue;
+                else {
+                    for (auto &enemy : enemies) {
+                        tile.get_building()->check_enemy(enemy);
+                    }
+                }
+            }
+        }
+    }
+
+
+
 }

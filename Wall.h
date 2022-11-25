@@ -9,6 +9,9 @@ namespace td {
         bool  is_entire;
         float max_health;
         float current_health;
+
+    public:
+        void check_enemy(std::unique_ptr<Enemy> enemy) override;
     };
 
 }

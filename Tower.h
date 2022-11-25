@@ -1,5 +1,6 @@
 #ifndef GAME_TOWER_H
 #define GAME_TOWER_H
+#include <cmath>
 #include "Building.h"
 
 namespace td {
@@ -13,6 +14,9 @@ namespace td {
         float damage;
         float fire_rate;
         int   upgrade_price;
+
+    public:
+        void check_enemy(std::unique_ptr<Enemy> enemy) override;
     };
 
 }

@@ -1,5 +1,7 @@
 #ifndef GAME_BUILDING_H
 #define GAME_BUILDING_H
+#include <memory>
+#include "Enemy.h"
 
 namespace td {
 
@@ -9,8 +11,10 @@ namespace td {
         float y;
 
     public:
-        [[nodiscard]] float get_x() const;
-        [[nodiscard]] float get_y() const;
+        float get_x() const;
+        float get_y() const;
+
+        virtual void check_enemy(std::unique_ptr<Enemy> enemy);
     };
 
 }

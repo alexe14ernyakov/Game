@@ -10,4 +10,8 @@ namespace td {
         return y;
     }
 
+    void Building::check_enemy(std::unique_ptr<Enemy> enemy) {
+        return;
+    }
+
 }

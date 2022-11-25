@@ -18,6 +18,7 @@ namespace td {
 
     public:
         Castle();
+        void get_damage(float dmg);
     };
 
 }

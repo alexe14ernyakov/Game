@@ -10,6 +10,9 @@ namespace td {
         type = t;
     }
 
+    Building *Tile::get_building() const {
+        return building;
+    }
 
 
 }

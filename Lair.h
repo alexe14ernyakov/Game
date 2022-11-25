@@ -14,6 +14,9 @@ namespace td {
     private:
         float     spawn_speed;
         EnemyType spawn_type;
+
+    public:
+        void check_enemy(std::unique_ptr<Enemy> enemy) override;
     };
 
 }

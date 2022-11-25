@@ -11,7 +11,7 @@
 namespace td {
 
     typedef struct Line{
-    private:
+    public:
         std::vector<Tile> line;
 
     public:
@@ -31,6 +31,10 @@ namespace td {
 
     public:
         Game_Field();
+        bool next_step();
+        bool check_game_status() const;
+        void check_castle();
+        void check_given_damage();
     };
 
 }

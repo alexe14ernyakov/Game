@@ -18,6 +18,7 @@ namespace td {
     public:
         Tile();
         Tile(TileType t);
+        Building* get_building() const;
     };
 
 }

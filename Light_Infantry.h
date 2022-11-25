@@ -7,6 +7,9 @@ namespace td {
     class Light_Infantry : Enemy{
     private:
         float dodge_chance;
+
+    public:
+        Light_Infantry(float x, float y);
     };
 
 }
