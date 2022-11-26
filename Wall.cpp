@@ -10,4 +10,8 @@ namespace td {
         if(current_health <= 0)
             is_entire = false;
     }
+
+    bool Wall::get_entire() const {
+        return is_entire;
+    }
 }

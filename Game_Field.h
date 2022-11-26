@@ -35,6 +35,8 @@ namespace td {
         bool check_game_status() const;
         void check_castle();
         void check_given_damage();
+        void check_castle_death();
+        void check_deaths();
     };
 
 }

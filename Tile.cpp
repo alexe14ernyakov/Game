@@ -14,5 +14,9 @@ namespace td {
         return building;
     }
 
+    void Tile::set_building(Building *build) {
+        building = build;
+    }
+
 
 }

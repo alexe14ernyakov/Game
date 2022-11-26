@@ -18,6 +18,7 @@ namespace td {
     public:
         Tile();
         Tile(TileType t);
+        void set_building(Building* build);
         Building* get_building() const;
     };
 

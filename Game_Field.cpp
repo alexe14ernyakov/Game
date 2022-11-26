@@ -48,4 +48,23 @@ namespace td {
         }
     }
 
+    void Game_Field::check_castle_death() {
+        if(castle->get_entire())
+            game_status = false;
+    }
+
+    void Game_Field::check_deaths() {
+        for(auto &line : game_field){
+            for(auto &tile : line.line) {
+                if(!tile.get_building()->get_entire())
+                    // удалить здание
+                    tile.set_building(nullptr);
+            }
+        }
+
+        for (auto &enemy : enemies) {
+            // удалить врагов
+        }
+    }
+
 }

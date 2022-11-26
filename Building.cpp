@@ -18,4 +18,8 @@ namespace td {
         return;
     }
 
+    bool Building::get_entire() const {
+        return true;
+    }
+
 }

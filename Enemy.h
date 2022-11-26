@@ -18,6 +18,7 @@ namespace td {
         float castle_damage;
 
     public:
+        Enemy();
         float get_x() const;
         float get_y() const;
         float get_castle_damage() const;

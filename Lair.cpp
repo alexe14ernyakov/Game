@@ -8,4 +8,8 @@ namespace td {
     void Lair::get_damage(float dmg) {
         return;
     }
+
+    bool Lair::get_entire() const {
+        return true;
+    }
 }
