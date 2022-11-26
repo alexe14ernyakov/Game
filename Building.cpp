@@ -14,4 +14,8 @@ namespace td {
         return;
     }
 
+    void Building::get_damage(float damage) {
+        return;
+    }
+
 }

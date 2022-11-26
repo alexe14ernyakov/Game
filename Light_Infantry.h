@@ -10,6 +10,7 @@ namespace td {
 
     public:
         Light_Infantry(float x, float y);
+        void check_building(Building &building) override;
     };
 
 }

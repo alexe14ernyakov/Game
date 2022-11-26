@@ -22,4 +22,8 @@ namespace td {
         if(current_health <= 0)
             kill();
     }
+
+    void Enemy::check_building(Building &building) {
+        return;
+    }
 }

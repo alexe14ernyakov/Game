@@ -8,6 +8,10 @@ namespace td {
     private:
         float firing_range;
         float damage;
+
+    public:
+        Heavy_Infantry(float x_pos, float y_pos);
+        void check_building(Building &building) override;
     };
 
 }

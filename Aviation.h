@@ -8,6 +8,9 @@ namespace td {
     private:
         int   ammunition;
         float damage;
+
+    public:
+        void check_building(Building &building) override;
     };
 
 }

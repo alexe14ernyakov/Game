@@ -1,5 +1,7 @@
 #ifndef GAME_ENEMY_H
 #define GAME_ENEMY_H
+#include <cmath>
+#include "Building.h"
 #include "Config.h"
 
 namespace td {
@@ -21,7 +23,7 @@ namespace td {
         float get_castle_damage() const;
         void kill();
         void get_damage(float dmg);
-
+        virtual void check_building(Building &building);
     };
 
 }

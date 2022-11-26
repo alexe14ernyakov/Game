@@ -4,4 +4,8 @@ namespace td {
     void Lair::check_enemy(std::unique_ptr<Enemy> enemy) {
         return;
     }
+
+    void Lair::get_damage(float dmg) {
+        return;
+    }
 }

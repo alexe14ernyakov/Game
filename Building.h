@@ -15,6 +15,7 @@ namespace td {
         float get_y() const;
 
         virtual void check_enemy(std::unique_ptr<Enemy> enemy);
+        virtual void get_damage(float damage);
     };
 
 }

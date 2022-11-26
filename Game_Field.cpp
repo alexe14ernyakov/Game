@@ -41,13 +41,11 @@ namespace td {
                     continue;
                 else {
                     for (auto &enemy : enemies) {
-                        tile.get_building()->check_enemy(enemy);
+                        //tile.get_building()->check_enemy(enemy);
                     }
                 }
             }
         }
     }
-
-
 
 }

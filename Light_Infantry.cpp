@@ -11,4 +11,8 @@ namespace td {
         castle_damage = config::GLOBAL_CONST_LIGHT_INFANTRY_CASTLE_DAMAGE;
         dodge_chance = config::GLOBAL_CONST_LIGHT_INFANTRY_DODGE_CHANCE;
     }
+
+    void Light_Infantry::check_building(Building &building) {
+        return;
+    }
 }

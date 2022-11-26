@@ -17,6 +17,7 @@ namespace td {
 
     public:
         void check_enemy(std::unique_ptr<Enemy> enemy) override;
+        void get_damage(float dmg) override;
     };
 
 }

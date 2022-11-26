@@ -6,4 +6,10 @@ namespace td {
         if(r <= firing_range)
             enemy->get_damage(damage);
     }
+
+    void Tower::get_damage(float dmg) {
+        current_health -= dmg;
+        if(current_health <= 0)
+            is_entire = false;
+    }
 }
